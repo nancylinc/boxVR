@@ -121,3 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hapticAudioClip: {fileID: 8300000, guid: 991390ac48da4b44b8b93d187ae7a0ba, type: 3}
+  Materials:
+  - {fileID: 2100000, guid: 62db2d638434d5a488dfb1e789e34b37, type: 2}
+  rend: {fileID: 0}
+  Materials1:
+  - {fileID: 2100000, guid: 9a0370938a0470c4bb41ce88944bf7a4, type: 2}
+  rend1: {fileID: 0}

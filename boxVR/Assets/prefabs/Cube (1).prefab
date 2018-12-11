@@ -59,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 6e3d4f4d859124c6db0fefb5c07c0891, type: 2}
+  - {fileID: 2100000, guid: b69e1514c45b540f69b5b7a4102a75f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,6 +110,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hapticAudioClip: {fileID: 8300000, guid: 991390ac48da4b44b8b93d187ae7a0ba, type: 3}
+  Materials:
+  - {fileID: 2100000, guid: 62db2d638434d5a488dfb1e789e34b37, type: 2}
+  rend: {fileID: 0}
+  Materials1:
+  - {fileID: 2100000, guid: b69e1514c45b540f69b5b7a4102a75f9, type: 2}
+  rend1: {fileID: 0}
 --- !u!114 &114921440513703578
 MonoBehaviour:
   m_ObjectHideFlags: 1
