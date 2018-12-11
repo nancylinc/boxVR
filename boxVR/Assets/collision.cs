@@ -12,6 +12,7 @@ public class collision : MonoBehaviour
     public Renderer rend;
     public Material[] Materials1;
     public Renderer rend1;
+    public bool inWall;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class collision : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.collider.tag == "explode")
+        if (col.collider.tag == "explode" && inWall)
         {
             Debug.Log("collided!!");
             Destroy(gameObject);
@@ -46,6 +47,7 @@ public class collision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        inWall = true;
         //Note: we use colliders here, not collisions
         if (other.gameObject.tag == "wall")
         {
@@ -58,6 +60,7 @@ public class collision : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        inWall = false;
         //Note: we use colliders here, not collisions
         if (other.gameObject.tag == "wall")
         {
