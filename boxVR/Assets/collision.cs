@@ -14,21 +14,26 @@ public class collision : MonoBehaviour
     public Renderer rend1;
     public bool inWall;
     public bool inWall1;
+   // public AudioClip otherClip;
+   // AudioSource audioSource;
 
     void Start()
     {
         // globalScore = score;
         rend = GetComponent<Renderer>();
         rend1 = GetComponent<Renderer>();
+      //  audioSource = GetComponent<AudioSource>();
     }
     void OnCollisionEnter(Collision col)
     {
         if (col.collider.tag == "explode" && inWall && inWall1)
         {
+           // audioSource.Play();
             Debug.Log("collided!!");
             Destroy(gameObject);
             globalScore += 5;
             globalStreaks += 5;
+            
             OVRHapticsClip hapticsClip = new OVRHapticsClip(hapticAudioClip);
             if (col.collider.name == "LeftHandAnchor")
                 OVRHaptics.LeftChannel.Preempt(hapticsClip);

@@ -8,6 +8,7 @@ TagManager:
   - destruct
   - wall
   - wall1
+  - block
   layers:
   - Default
   - TransparentFX
